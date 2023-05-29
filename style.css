@@ -435,4 +435,78 @@ body header nav .main-nav .nav-icons {
 body header nav .main-nav .nav-icons .icons i {
   font-size: 20px;
   margin-left: 15px;
+}
+body header .hero-sect {
+  padding: 5px 6rem;
+  color: #fafafa;
+  margin-top: 60px;
+  position: relative;
+}
+body header .hero-sect .hero-sect-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 4px;
+  position: relative;
+}
+body header .hero-sect .hero-sect-container .hero-sect-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  width: 55%;
+  margin-left: 5rem;
+}
+body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-head2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 22.23px;
+}
+body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-h1 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 66px;
+  font-weight: 600;
+  word-wrap: break-word;
+  width: 400px;
+}
+body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 22.23px;
+}
+body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-para .hero-sect-para-span:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+body header .hero-sect .hero-sect-container .hero-sect-toggle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 30px;
+  left: 50%;
+  gap: 1rem;
+  transform: translate(-50%, -50%);
+}
+body header .hero-sect .hero-sect-container .hero-sect-toggle div {
+  width: 16.67px;
+  height: 16.67px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+body header .hero-sect .hero-sect-container .hero-sect-toggle .toggled {
+  opacity: 1;
+  background-color: #5ac0c0;
+  width: 15px;
+  height: 15px;
+  border: 2.77907px solid #ffffff;
+}
+body main section {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
