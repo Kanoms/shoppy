@@ -509,17 +509,17 @@ body header .hero-sect .hero-sect-container .hero-sect-toggle .toggled {
   height: 15px;
   border: 2.77907px solid #ffffff;
 }
-body main section {
+body main .sect-one {
   width: 100%;
   height: 100%;
 }
-body main section .sponsors-container {
+body main .sect-one .sponsors-container {
   position: relative;
   width: 100%;
   padding-top: 90px;
   height: 100px;
 }
-body main section .sponsors-container .sponsors {
+body main .sect-one .sponsors-container .sponsors {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,7 +530,7 @@ body main section .sponsors-container .sponsors {
   transform: translate(-50%, -50%);
   width: auto;
 }
-body main section .sponsors-container .sponsors div {
+body main .sect-one .sponsors-container .sponsors div {
   width: 197.58px;
   height: 111.57px;
   background: #fdfffe;
@@ -541,7 +541,7 @@ body main section .sponsors-container .sponsors div {
   align-items: center;
   justify-content: center;
 }
-body main section .explore {
+body main .sect-two .explore {
   padding-top: 90px;
   margin-top: 90px;
   padding: 5px 7rem;
@@ -549,22 +549,24 @@ body main section .explore {
   font-weight: 500;
   font-size: 2rem;
 }
-body main section .explore .explore-head {
+body main .sect-two .explore .explore-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body main section .explore .explore-head h2 {
+body main .sect-two .explore .explore-head h2 {
   font-size: 64px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  color: #1e1e1e;
 }
-body main section .explore .explore-head span {
+body main .sect-two .explore .explore-head span {
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   font-weight: 500;
+  color: #5ac0c0;
 }
-body main section .explore .explore-img-sect {
+body main .sect-two .explore .explore-img-sect {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -572,14 +574,14 @@ body main section .explore .explore-img-sect {
   gap: 2rem;
   color: #ffffff;
 }
-body main section .explore .explore-img-sect .explore-img-sect-up {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-up {
   width: 100%;
   display: grid;
   grid-template-columns: 34% 64%;
   align-items: center;
   justify-content: space-between;
 }
-body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion {
   background-image: url(/assets/images/short-trousers.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -587,12 +589,12 @@ body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-s
   border-radius: 5px;
   position: relative;
 }
-body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion p {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion p {
   position: absolute;
   left: 2rem;
   bottom: 0rem;
 }
-body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics {
   background-image: url(/assets/images/table-gadgets.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -600,12 +602,12 @@ body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-s
   border-radius: 5px;
   position: relative;
 }
-body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics p {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics p {
   position: absolute;
   left: 2rem;
   bottom: 0rem;
 }
-body main section .explore .explore-img-sect .explore-img-sect-down {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-down {
   width: 100%;
   display: grid;
   grid-template-columns: 64% 34%;
@@ -613,7 +615,7 @@ body main section .explore .explore-img-sect .explore-img-sect-down {
   justify-content: space-between;
   height: 427px;
 }
-body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops {
   background-image: url(/assets/images/shops.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,12 +623,12 @@ body main section .explore .explore-img-sect .explore-img-sect-down .explore-img
   border-radius: 5px;
   position: relative;
 }
-body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops p {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops p {
   position: absolute;
   left: 2rem;
   bottom: 0rem;
 }
-body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture {
   background-image: url(/assets/images/ante-room.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -634,8 +636,174 @@ body main section .explore .explore-img-sect .explore-img-sect-down .explore-img
   border-radius: 5px;
   position: relative;
 }
-body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture p {
+body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture p {
   position: absolute;
   left: 2rem;
   bottom: 0rem;
+}
+body main .sect-three {
+  padding-top: 6rem;
+  color: #1e1e1e;
+}
+body main .sect-three .sect-three-container {
+  padding: 5px 7rem;
+  display: flex;
+  gap: 40px;
+  font-family: "Poppins", sans-serif;
+}
+body main .sect-three .sect-three-container .sect-three-head {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+body main .sect-three .sect-three-container .sect-three-head h3 {
+  margin-top: 0px;
+  font-size: 31.67px;
+}
+body main .sect-three .sect-three-container .sect-three-head p {
+  margin-top: 0px;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .sect-three .sect-three-container .sect-three-head button {
+  width: 167.15px;
+  height: 50.75px;
+  background: #c1dcdc;
+  border-radius: 7.9168px;
+  border: none;
+  border-radius: 7px;
+}
+body main .sect-three .sect-three-container .sect-three-img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 {
+  background-image: url(/assets/images/male-trouser.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 337px;
+  border-radius: 12px;
+  position: relative;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 button {
+  position: absolute;
+  width: 48px;
+  height: 41px;
+  top: 50%;
+  border: none;
+  border-radius: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  left: -24px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.63px;
+  line-height: 25px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .current-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .old-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: rgba(30, 30, 30, 0.5019607843);
+  text-decoration: line-through;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .discount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: #388e3c;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .sect-three-img2 {
+  background-image: url(/assets/images/girl-yale.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 337px;
+  border-radius: 12px;
+  position: relative;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.63px;
+  line-height: 25px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .current-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .old-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: rgba(30, 30, 30, 0.5019607843);
+  text-decoration: line-through;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .discount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: #388e3c;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .sect-three-img3 {
+  background-image: url(/assets/images/girl-shorts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 337px;
+  border-radius: 12px;
+  position: relative;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .sect-three-img3 button {
+  position: absolute;
+  width: 48px;
+  height: 41px;
+  top: 50%;
+  border: none;
+  border-radius: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  right: -24px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.63px;
+  line-height: 25px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .current-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .old-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: rgba(30, 30, 30, 0.5019607843);
+  text-decoration: line-through;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .discount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+  color: #388e3c;
 }/*# sourceMappingURL=style.css.map */

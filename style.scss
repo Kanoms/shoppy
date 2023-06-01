@@ -201,7 +201,7 @@ body {
   }
 
   main {
-    section {
+    .sect-one {
       width: 100%;
       height: 100%;
 
@@ -233,7 +233,7 @@ body {
       }
     }
 
-    section {
+    .sect-two {
       .explore {
         padding-top: 90px;
         margin-top: 90px;
@@ -248,12 +248,14 @@ body {
             font-size: $shoppy-section-heading;
             font-family: $shoppy-section-heading-family;
             font-weight: 700;
+            color: $shoppy-dark-btn;
           }
 
           span {
             font-family: $shoppy-section-heading-family;
             font-size: 21px;
             font-weight: 500;
+            color: #5ac0c0;
           }
         }
 
@@ -321,6 +323,133 @@ body {
                 left: 2rem;
                 bottom: 0rem;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .sect-three {
+      padding-top: 6rem;
+      color: $shoppy-dark-btn;
+      .sect-three-container {
+        @include k-container;
+        display: flex;
+        gap: 40px;
+        font-family: $shoppy-body-family;
+        .sect-three-head {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          h3 {
+            margin-top: 0px;
+            font-size: 31.67px;
+          }
+
+          p {
+            margin-top: 0px;
+            color: rgba(30, 30, 30, 0.5);
+          }
+
+          button {
+            width: 167.15px;
+            height: 50.75px;
+            background: #c1dcdc;
+            border-radius: 7.9168px;
+            border: none;
+            border-radius: 7px;
+          }
+        }
+
+        .sect-three-img {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: space-between;
+          gap: 2rem;
+
+          .sect-three-img-pt1 {
+            .sect-three-img1 {
+              background-image: url(/assets/images/male-trouser.png);
+              @include k-bg-img;
+
+              button {
+                @include k-img-btn;
+                left: -24px;
+              }
+            }
+
+            p {
+              @include k-p-bold;
+            }
+
+            .current-price {
+              @include k-cur-span-all;
+            }
+
+            .old-price {
+              @include k-cur-span-all;
+              @include k-cur-span-cancel;
+            }
+
+            .discount {
+              @include k-cur-span-all;
+              @include k-cur-span-off;
+            }
+          }
+
+          .sect-three-img-pt2 {
+            .sect-three-img2 {
+              background-image: url(/assets/images/girl-yale.png);
+              @include k-bg-img;
+            }
+
+            p {
+              @include k-p-bold;
+            }
+
+            .current-price {
+              @include k-cur-span-all;
+            }
+
+            .old-price {
+              @include k-cur-span-all;
+              @include k-cur-span-cancel;
+            }
+
+            .discount {
+              @include k-cur-span-all;
+              @include k-cur-span-off;
+            }
+          }
+
+          .sect-three-img-pt3 {
+            .sect-three-img3 {
+              background-image: url(/assets/images/girl-shorts.png);
+              @include k-bg-img;
+
+              button {
+                @include k-img-btn;
+                right: -24px;
+              }
+            }
+
+            p {
+              @include k-p-bold;
+            }
+
+            .current-price {
+              @include k-cur-span-all;
+            }
+
+            .old-price {
+              @include k-cur-span-all;
+              @include k-cur-span-cancel;
+            }
+
+            .discount {
+              @include k-cur-span-all;
+              @include k-cur-span-off;
             }
           }
         }

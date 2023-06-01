@@ -39,3 +39,45 @@
   border-radius: 5px;
   position: relative;
 }
+
+@mixin k-bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 337px;
+  border-radius: 12px;
+  position: relative;
+}
+
+@mixin k-p-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.63px;
+  line-height: 25px;
+}
+
+@mixin k-cur-span-all {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7324px;
+}
+
+@mixin k-cur-span-cancel {
+  color: #1e1e1e80;
+  text-decoration: line-through;
+}
+
+@mixin k-cur-span-off {
+  color: #388e3c;
+}
+
+@mixin k-img-btn {
+  position: absolute;
+  width: 48px;
+  height: 41px;
+  top: 50%;
+  border: none;
+  border-radius: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
