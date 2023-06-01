@@ -31,3 +31,11 @@
 @mixin k-container {
   padding: 5px 7rem;
 }
+
+@mixin k-exp-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 427px;
+  border-radius: 5px;
+  position: relative;
+}

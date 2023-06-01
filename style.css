@@ -1,12 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
-* {
-  overflow: hidden;
-}
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -27,6 +23,7 @@ body {
    */
 main {
   display: block;
+  overflow-x: hidden;
 }
 
 /**
@@ -513,21 +510,27 @@ body header .hero-sect .hero-sect-container .hero-sect-toggle .toggled {
   border: 2.77907px solid #ffffff;
 }
 body main section {
-  max-width: 100vw;
   width: 100%;
-  margin-top: 90px;
+  height: 100%;
 }
-body main section .sponsors {
+body main section .sponsors-container {
+  position: relative;
+  width: 100%;
+  padding-top: 90px;
+  height: 100px;
+}
+body main section .sponsors-container .sponsors {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
   position: absolute;
+  bottom: -90px;
   left: 50vw;
   transform: translate(-50%, -50%);
   width: auto;
 }
-body main section .sponsors div {
+body main section .sponsors-container .sponsors div {
   width: 197.58px;
   height: 111.57px;
   background: #fdfffe;
@@ -538,6 +541,101 @@ body main section .sponsors div {
   align-items: center;
   justify-content: center;
 }
-body main section {
+body main section .explore {
+  padding-top: 90px;
   margin-top: 90px;
+  padding: 5px 7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+body main section .explore .explore-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section .explore .explore-head h2 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+body main section .explore .explore-head span {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+body main section .explore .explore-img-sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffff;
+}
+body main section .explore .explore-img-sect .explore-img-sect-up {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34% 64%;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion {
+  background-image: url(/assets/images/short-trousers.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 427px;
+  border-radius: 5px;
+  position: relative;
+}
+body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion p {
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
+}
+body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics {
+  background-image: url(/assets/images/table-gadgets.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 427px;
+  border-radius: 5px;
+  position: relative;
+}
+body main section .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics p {
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
+}
+body main section .explore .explore-img-sect .explore-img-sect-down {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64% 34%;
+  align-items: center;
+  justify-content: space-between;
+  height: 427px;
+}
+body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops {
+  background-image: url(/assets/images/shops.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 427px;
+  border-radius: 5px;
+  position: relative;
+}
+body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops p {
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
+}
+body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture {
+  background-image: url(/assets/images/ante-room.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 427px;
+  border-radius: 5px;
+  position: relative;
+}
+body main section .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture p {
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
 }/*# sourceMappingURL=style.css.map */

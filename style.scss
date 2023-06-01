@@ -202,32 +202,129 @@ body {
 
   main {
     section {
-      max-width: 100vw;
       width: 100%;
-      margin-top: 90px;
+      height: 100%;
 
-      .sponsors {
-        @include jd-flex-norm;
-        gap: 5rem;
-        position: absolute;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        width: auto;
+      .sponsors-container {
+        position: relative;
+        width: 100%;
+        padding-top: 90px;
+        height: 100px;
 
-        div {
-          width: 197.58px;
-          height: 111.57px;
-          background: #fdfffe;
-          box-shadow: 0px 34.867px 46.4894px rgba(212, 217, 232, 0.2);
-          border-radius: 18.5958px;
-          position: relative;
+        .sponsors {
           @include jd-flex-norm;
+          gap: 5rem;
+          position: absolute;
+          bottom: -90px;
+          left: 50vw;
+          transform: translate(-50%, -50%);
+          width: auto;
+
+          div {
+            width: 197.58px;
+            height: 111.57px;
+            background: #fdfffe;
+            box-shadow: 0px 34.867px 46.4894px rgba(212, 217, 232, 0.2);
+            border-radius: 18.5958px;
+            position: relative;
+            @include jd-flex-norm;
+          }
         }
       }
     }
 
     section {
-      margin-top: 90px;
+      .explore {
+        padding-top: 90px;
+        margin-top: 90px;
+        @include k-container;
+        font-family: $shoppy-body-family;
+        font-weight: 500;
+        font-size: 2rem;
+
+        .explore-head {
+          @include jd-flex-sb;
+          h2 {
+            font-size: $shoppy-section-heading;
+            font-family: $shoppy-section-heading-family;
+            font-weight: 700;
+          }
+
+          span {
+            font-family: $shoppy-section-heading-family;
+            font-size: 21px;
+            font-weight: 500;
+          }
+        }
+
+        .explore-img-sect {
+          @include jd-flex-sb;
+          flex-direction: column;
+          gap: 2rem;
+          color: $shoppy-white;
+
+          .explore-img-sect-up {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 34% 64%;
+            align-items: center;
+            justify-content: space-between;
+
+            .explore-img-sect-fashion {
+              background-image: url(/assets/images/short-trousers.png);
+              @include k-exp-container;
+
+              p {
+                position: absolute;
+                left: 2rem;
+                bottom: 0rem;
+              }
+            }
+
+            .explore-img-sect-electronics {
+              background-image: url(/assets/images/table-gadgets.png);
+              @include k-exp-container;
+
+              p {
+                position: absolute;
+                left: 2rem;
+                bottom: 0rem;
+              }
+            }
+          }
+
+          .explore-img-sect-down {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 64% 34%;
+            align-items: center;
+            justify-content: space-between;
+            height: 427px;
+
+            .explore-img-sect-shops {
+              background-image: url(/assets/images/shops.png);
+              @include k-exp-container;
+
+              p {
+                position: absolute;
+                left: 2rem;
+                bottom: 0rem;
+              }
+            }
+
+            .explore-img-sect-furniture {
+              background-image: url(/assets/images/ante-room.png);
+              @include k-exp-container;
+
+              p {
+                position: absolute;
+                left: 2rem;
+                bottom: 0rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
