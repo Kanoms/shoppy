@@ -479,6 +479,9 @@ body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-h1 h1 {
 body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-para {
   font-family: "Poppins", sans-serif;
   font-size: 22.23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-para .hero-sect-para-span:hover {
   text-decoration: underline;
@@ -671,6 +674,10 @@ body main .sect-three .sect-three-container .sect-three-head button {
   border-radius: 7.9168px;
   border: none;
   border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 body main .sect-three .sect-three-container .sect-three-img {
   width: 100%;
@@ -806,4 +813,63 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 
   font-weight: 500;
   font-size: 16.7324px;
   color: #388e3c;
+}
+body main .sect-four {
+  margin-top: 9rem;
+  position: relative;
+  padding: 5px 7rem;
+}
+body main .sect-four .sect-four-container {
+  width: 100%;
+  position: relative;
+}
+body main .sect-four .sect-four-container .sect-four-bg .progress-bar {
+  --s: 50px; /* define the curve (make bigger to increase the curve, smaller to reduce)*/
+  --p: 37; /* percentage of the progress without unit */
+  --c: #02a0a0; /* color */
+  line-height: 34px;
+  background: linear-gradient(to bottom right, var(--c) 49%, transparent 50%) calc(1% * var(--p) + var(--p, 0) / 100 * var(--s)) 0/var(--s) 100%, linear-gradient(var(--c) 0 0) 0/calc(1% * var(--p)) 100%, #c1dcdc;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 8.4px;
+  height: 126px;
+  transform: scaleX(-1);
+  display: flex;
+}
+body main .sect-four .sect-four-container .sect-four-text {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  height: 126px;
+}
+body main .sect-four .sect-four-container .sect-four-text div {
+  padding: 0px 2rem;
+  padding-bottom: 0px;
+}
+body main .sect-four .sect-four-container .sect-four-text div h3 {
+  font-size: 25.2px;
+  color: #212121;
+  margin-bottom: 2.7px;
+  font-family: "Inter", sans-serif;
+}
+body main .sect-four .sect-four-container .sect-four-text div p {
+  font-size: 16.8px;
+  color: #212121;
+  opacity: 0.7;
+  font-family: "Inter", sans-serif;
+}
+body main .sect-four .sect-four-container .sect-four-text div button {
+  color: #ffffff;
+  background-color: #1e1e1e;
+  width: 127.05px;
+  height: 42px;
+  border: none;
+  border-radius: 6.3px;
+  font-family: "Inter", sans-serif;
 }/*# sourceMappingURL=style.css.map */
