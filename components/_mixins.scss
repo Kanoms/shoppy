@@ -29,7 +29,7 @@
 }
 
 @mixin k-container {
-  padding: 5px 7rem;
+  padding: 5px 5rem;
 }
 
 @mixin k-exp-container {
@@ -42,8 +42,10 @@
 
 @mixin k-bg-img {
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 337px;
+  background-size: contain;
+  background-position: center;
+  width: 278px;
+  height: 338px;
   border-radius: 12px;
   position: relative;
 }
@@ -88,4 +90,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+@mixin k-bg-img3 {
+  background: #eeeeee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 265px;
+  width: 100%;
+  @include jd-flex-norm;
 }

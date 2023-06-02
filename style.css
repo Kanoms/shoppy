@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -331,6 +338,7 @@ body {
 body header {
   font-size: 14.78px;
   width: 100%;
+  margin-bottom: 90px;
 }
 body header nav {
   width: 100%;
@@ -439,7 +447,7 @@ body header nav .main-nav .nav-icons .icons i {
   margin-left: 15px;
 }
 body header .hero-sect {
-  padding: 5px 7rem;
+  padding: 5px 5rem;
   color: #fafafa;
   margin-top: 60px;
   position: relative;
@@ -544,10 +552,13 @@ body main .sect-one .sponsors-container .sponsors div {
   align-items: center;
   justify-content: center;
 }
+body main .sect-two {
+  padding-top: 90px;
+}
 body main .sect-two .explore {
   padding-top: 90px;
   margin-top: 90px;
-  padding: 5px 7rem;
+  padding: 5px 5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -556,6 +567,7 @@ body main .sect-two .explore .explore-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 body main .sect-two .explore .explore-head h2 {
   font-size: 64px;
@@ -595,7 +607,7 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion p {
   position: absolute;
   left: 2rem;
-  bottom: 0rem;
+  bottom: 2rem;
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics {
   background-image: url(/assets/images/table-gadgets.png);
@@ -608,7 +620,7 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics p {
   position: absolute;
   left: 2rem;
-  bottom: 0rem;
+  bottom: 2rem;
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down {
   width: 100%;
@@ -629,7 +641,7 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-i
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops p {
   position: absolute;
   left: 2rem;
-  bottom: 0rem;
+  bottom: 2rem;
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture {
   background-image: url(/assets/images/ante-room.png);
@@ -642,14 +654,14 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-i
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture p {
   position: absolute;
   left: 2rem;
-  bottom: 0rem;
+  bottom: 2rem;
 }
 body main .sect-three {
   padding-top: 6rem;
   color: #1e1e1e;
 }
 body main .sect-three .sect-three-container {
-  padding: 5px 7rem;
+  padding: 5px 5rem;
   display: flex;
   gap: 40px;
   font-family: "Poppins", sans-serif;
@@ -657,7 +669,7 @@ body main .sect-three .sect-three-container {
 body main .sect-three .sect-three-container .sect-three-head {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 2rem;
 }
 body main .sect-three .sect-three-container .sect-three-head h3 {
   margin-top: 0px;
@@ -666,6 +678,10 @@ body main .sect-three .sect-three-container .sect-three-head h3 {
 body main .sect-three .sect-three-container .sect-three-head p {
   margin-top: 0px;
   color: rgba(30, 30, 30, 0.5);
+  font-weight: 500;
+  font-size: 17.8128px;
+  line-height: 27px;
+  width: 50%;
 }
 body main .sect-three .sect-three-container .sect-three-head button {
   width: 167.15px;
@@ -682,15 +698,17 @@ body main .sect-three .sect-three-container .sect-three-head button {
 body main .sect-three .sect-three-container .sect-three-img {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 278px);
   justify-content: space-between;
   gap: 2rem;
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 {
   background-image: url(/assets/images/male-trouser.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 337px;
+  background-size: contain;
+  background-position: center;
+  width: 278px;
+  height: 338px;
   border-radius: 12px;
   position: relative;
 }
@@ -712,6 +730,7 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 
   font-weight: 500;
   font-size: 16.63px;
   line-height: 25px;
+  margin: 10px 0px;
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .current-price {
   font-family: "Poppins";
@@ -737,8 +756,10 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .sect-three-img2 {
   background-image: url(/assets/images/girl-yale.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 337px;
+  background-size: contain;
+  background-position: center;
+  width: 278px;
+  height: 338px;
   border-radius: 12px;
   position: relative;
 }
@@ -748,6 +769,7 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 
   font-weight: 500;
   font-size: 16.63px;
   line-height: 25px;
+  margin: 10px 0px;
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .current-price {
   font-family: "Poppins";
@@ -773,8 +795,10 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .sect-three-img3 {
   background-image: url(/assets/images/girl-shorts.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 337px;
+  background-size: contain;
+  background-position: center;
+  width: 278px;
+  height: 338px;
   border-radius: 12px;
   position: relative;
 }
@@ -796,6 +820,7 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 
   font-weight: 500;
   font-size: 16.63px;
   line-height: 25px;
+  margin: 10px 0px;
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .current-price {
   font-family: "Poppins";
@@ -821,7 +846,7 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 
 body main .sect-four {
   margin-top: 9rem;
   position: relative;
-  padding: 5px 7rem;
+  padding: 5px 5rem;
 }
 body main .sect-four .sect-four-container {
   width: 100%;
@@ -862,30 +887,31 @@ body main .sect-four .sect-four-container .slanted-bg div button {
   border-radius: 6.3px;
   font-family: "Inter", sans-serif;
 }
-body .sect-five {
+body main .sect-five {
   margin-top: 7rem;
 }
-body .sect-five .sect-five-container {
-  padding: 5px 7rem;
+body main .sect-five .sect-five-container {
+  padding: 5px 5rem;
+  padding: 0rem 7rem;
 }
-body .sect-five .sect-five-container .sect-five-head-sm {
+body main .sect-five .sect-five-container .sect-five-head-sm {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-body .sect-five .sect-five-container .sect-five-head-sm .sect-five-head-sm-bar {
+body main .sect-five .sect-five-container .sect-five-head-sm .sect-five-head-sm-bar {
   width: 20px;
   height: 40px;
   border-radius: 4px;
   background-color: #02a0a0;
 }
-body .sect-five .sect-five-container .sect-five-head-sm .sect-five-head-sm-txt {
+body main .sect-five .sect-five-container .sect-five-head-sm .sect-five-head-sm-txt {
   font-size: 1rem;
   color: #02a0a0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-body .sect-five .sect-five-container .sect-five-head-lg {
+body main .sect-five .sect-five-container .sect-five-head-lg {
   color: #000;
   font-weight: 600;
   font-size: 36px;
@@ -893,13 +919,13 @@ body .sect-five .sect-five-container .sect-five-head-lg {
   margin-top: 20px;
   margin-bottom: 60px;
 }
-body .sect-five .sect-five-container .sect-five-gallery {
+body main .sect-five .sect-five-container .sect-five-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   height: 600px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -907,7 +933,7 @@ body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one {
   border-radius: 4px;
   padding: 70px 30px 0px 30px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 {
   background-image: url(/assets/images/ps-5.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -916,43 +942,46 @@ body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect
   color: #fafafa;
   position: relative;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div {
   position: absolute;
   bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div h3 {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div h3 {
   font-weight: 600;
   font-size: 24px;
   font-family: "Inter", sans-serif;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div p {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   width: 70%;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div span {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div span {
   font-weight: 500;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div span:hover {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-one .sect-five-ps5 div span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up {
   background: #0d0d0d;
   color: #fafafa;
   height: 100%;
   position: relative;
   border-radius: 4px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-lady-in-hat {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-lady-in-hat {
   background-image: url(/assets/images/woman-wearing-hat.png);
   width: 70%;
   height: 100%;
@@ -961,37 +990,40 @@ body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect
   position: absolute;
   right: 10px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection {
   position: absolute;
   left: 24px;
   bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection h3 {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection h3 {
   font-weight: 600;
   font-size: 24px;
   font-family: "Inter", sans-serif;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection p {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   width: 70%;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection span {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection span {
   font-weight: 500;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection span:hover {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-up .sect-five-wm-collection span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one {
   background: #1e1e1e;
   position: relative;
   display: flex;
@@ -999,33 +1031,36 @@ body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect
   justify-content: center;
   border-radius: 4px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt {
   position: absolute;
   color: #fafafa;
   bottom: 24px;
   left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt h3 {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt h3 {
   font-weight: 600;
   font-size: 24px;
   font-family: "Inter", sans-serif;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt p {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   width: 100%;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt span {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt span {
   font-weight: 500;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt span:hover {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-txt span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-png {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-one .sect-five-speaker-png {
   background-image: url(assets/images/speakers.png);
   width: calc(100% - 80px);
   height: calc(100% - 2rem);
@@ -1033,15 +1068,255 @@ body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect
   background-position: center;
   background-repeat: no-repeat;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-two {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-two {
   background: #1e1e1e;
   padding: 35px;
 }
-body .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-two .sect-five-perfume-png {
+body main .sect-five .sect-five-container .sect-five-gallery .sect-five-gal-two .sect-five-gal-two-dw .sect-five-gal-btm-two .sect-five-perfume-png {
   background-image: url(assets/images/perfume.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+body main .sect-six {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  padding: 5px 5rem;
+}
+body main .sect-six .sect-six-container {
+  border: #dee2e7 1px solid;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 21px;
+}
+body main .sect-six .sect-six-container .sect-six-head {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 21.0169px;
+  margin-bottom: 1rem;
+}
+body main .sect-six .sect-six-container .sect-six-devices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+body main .sect-six .sect-six-container .sect-six-devices div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+body main .sect-six .sect-six-container .sect-six-devices div .ipad {
+  background: #eeeeee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 265px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .sect-six .sect-six-container .sect-six-devices div div h3 {
+  font-weight: 600;
+  font-size: 18.9153px;
+  font-family: "Poppins", sans-serif;
+  color: #1c1c1c;
+}
+body main .sect-six .sect-six-container .sect-six-devices div div p {
+  font-weight: 400;
+  font-size: 16.8136px;
+  color: #606060;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+}
+body main .sect-six .sect-six-container .sect-six-devices div div button {
+  background: #ffffff;
+  border: 1px solid #dee2e7;
+  border-radius: 6px;
+  width: 164.7px;
+  height: 44.19px;
+  color: #2283dc;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 16.8136px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  cursor: pointer;
+}
+body main .sect-six .sect-six-container .sect-six-devices div div button:hover {
+  background: #eeeeee;
+}
+body main .sect-six .sect-six-container .sect-six-devices div div button i {
+  font-size: 24px;
+}
+body main .sect-six .sect-six-container .sect-six-devices div .iphone {
+  background: #eeeeee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 265px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .sect-six .sect-six-container .sect-six-devices div .iwatch {
+  background: #eeeeee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 265px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .sect-six .sect-six-container .sect-six-devices div .macbook {
+  background: #eeeeee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 265px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer {
+  background: #000;
+  color: #fafafa;
+}
+body footer .ft-container {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  font-family: #fafafa;
+}
+body footer .ft-container .ft-sect-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 45px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt1 .ft-sect-one-pt1-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt1 .ft-sect-one-pt1-txt h3 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt1 .ft-sect-one-pt1-txt p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt2 .ft-sect-one-pt2-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt2 .ft-sect-one-pt2-txt h3 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+body footer .ft-container .ft-sect-one .ft-sect-one-pt2 .ft-sect-one-pt2-txt p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+body footer .ft-container .ft-sect-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 70px;
+}
+body footer .ft-container .ft-sect-two ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+body footer .ft-container .ft-sect-two ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+body footer .ft-container .ft-sect-two ul .ft-sec-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 1rem;
+}
+body footer .ft-container .ft-sect-two ul .ft-social-links-icon {
+  font-size: 30px;
+  font-weight: 200;
+  display: flex;
+  gap: 2rem;
+}
+body footer .ft-container .ft-sect-two ul .ft-for-mobile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+body footer .ft-container .ft-sect-two ul .ft-for-mobile div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+body footer .ft-container .ft-sect-three {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5rem;
+}
+body footer .ft-container .ft-sect-three .ft-pay-opt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body footer .ft-container .ft-sect-three .ft-pay-opt h4 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #cfcfcf;
+}
+body footer .ft-container .ft-sect-three .ft-pay-opt div {
+  display: flex;
+  gap: 20px;
+}
+body footer .ft-container .ft-sect-three .ft-copyright {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #cfcfcf;
 }/*# sourceMappingURL=style.css.map */

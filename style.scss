@@ -11,6 +11,7 @@ body {
   header {
     font-size: $shoppy-body-text;
     width: 100%;
+    margin-bottom: 90px;
 
     nav {
       width: 100%;
@@ -235,6 +236,7 @@ body {
     }
 
     .sect-two {
+      padding-top: 90px;
       .explore {
         padding-top: 90px;
         margin-top: 90px;
@@ -245,6 +247,7 @@ body {
 
         .explore-head {
           @include jd-flex-sb;
+          margin-bottom: 3rem;
           h2 {
             font-size: $shoppy-section-heading;
             font-family: $shoppy-section-heading-family;
@@ -280,7 +283,7 @@ body {
               p {
                 position: absolute;
                 left: 2rem;
-                bottom: 0rem;
+                bottom: 2rem;
               }
             }
 
@@ -291,7 +294,7 @@ body {
               p {
                 position: absolute;
                 left: 2rem;
-                bottom: 0rem;
+                bottom: 2rem;
               }
             }
           }
@@ -311,7 +314,7 @@ body {
               p {
                 position: absolute;
                 left: 2rem;
-                bottom: 0rem;
+                bottom: 2rem;
               }
             }
 
@@ -322,7 +325,7 @@ body {
               p {
                 position: absolute;
                 left: 2rem;
-                bottom: 0rem;
+                bottom: 2rem;
               }
             }
           }
@@ -337,11 +340,12 @@ body {
         @include k-container;
         display: flex;
         gap: 40px;
+
         font-family: $shoppy-body-family;
         .sect-three-head {
           display: flex;
           flex-direction: column;
-          gap: 7px;
+          gap: 2rem;
           h3 {
             margin-top: 0px;
             font-size: 31.67px;
@@ -350,6 +354,10 @@ body {
           p {
             margin-top: 0px;
             color: rgba(30, 30, 30, 0.5);
+            font-weight: 500;
+            font-size: 17.8128px;
+            line-height: 27px;
+            width: 50%;
           }
 
           button {
@@ -367,7 +375,7 @@ body {
         .sect-three-img {
           width: 100%;
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(3, 278px);
           justify-content: space-between;
           gap: 2rem;
 
@@ -384,6 +392,7 @@ body {
 
             p {
               @include k-p-bold;
+              margin: 10px 0px;
             }
 
             .current-price {
@@ -409,6 +418,7 @@ body {
 
             p {
               @include k-p-bold;
+              margin: 10px 0px;
             }
 
             .current-price {
@@ -439,6 +449,7 @@ body {
 
             p {
               @include k-p-bold;
+              margin: 10px 0px;
             }
 
             .current-price {
@@ -462,6 +473,7 @@ body {
     .sect-four {
       margin-top: 9rem;
       position: relative;
+
       @include k-container;
       .sect-four-container {
         width: 100%;
@@ -508,161 +520,68 @@ body {
         }
       }
     }
-  }
 
-  .sect-five {
-    margin-top: 7rem;
-    .sect-five-container {
-      @include k-container;
-      .sect-five-head-sm {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+    .sect-five {
+      margin-top: 7rem;
+      .sect-five-container {
+        @include k-container;
+        padding: 0rem 7rem;
+        .sect-five-head-sm {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
 
-        .sect-five-head-sm-bar {
-          width: 20px;
-          height: 40px;
-          border-radius: 4px;
-          background-color: $shoppy-teal-blue;
-        }
-
-        .sect-five-head-sm-txt {
-          font-size: 1rem;
-          color: $shoppy-teal-blue;
-          font-weight: 600;
-          font-family: $shoppy-body-family;
-        }
-      }
-
-      .sect-five-head-lg {
-        color: #000;
-        font-weight: 600;
-        font-size: 36px;
-        font-family: $shoppy-CTA-family;
-        margin-top: 20px;
-        margin-bottom: 60px;
-      }
-
-      .sect-five-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        height: 600px;
-
-        .sect-five-gal-one {
-          @include k-bg-img2;
-          background: #000000;
-          border-radius: 4px;
-          padding: 70px 30px 0px 30px;
-
-          .sect-five-ps5 {
-            background-image: url(/assets/images/ps-5.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100%;
-            background-position: center;
-            color: $shoppy-hero-ft-txt;
-            position: relative;
-
-            div {
-              position: absolute;
-              bottom: 2rem;
-
-              h3 {
-                font-weight: 600;
-                font-size: 24px;
-                font-family: $shoppy-CTA-family;
-              }
-
-              p {
-                font-family: $shoppy-body-family;
-                font-size: 14px;
-                width: 70%;
-              }
-
-              span {
-                font-weight: 500;
-                font-size: 16px;
-                font-family: $shoppy-body-family;
-                color: $shoppy-white;
-                &:hover {
-                  text-decoration: underline;
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-
-        .sect-five-gal-two {
-          display: grid;
-          grid-template-rows: repeat(2, 1fr);
-          gap: 30px;
-          .sect-five-gal-two-up {
-            background: #0d0d0d;
-            color: $shoppy-hero-ft-txt;
-            height: 100%;
-            position: relative;
+          .sect-five-head-sm-bar {
+            width: 20px;
+            height: 40px;
             border-radius: 4px;
-
-            .sect-five-lady-in-hat {
-              background-image: url(/assets/images/woman-wearing-hat.png);
-              width: 70%;
-              height: 100%;
-              background-size: contain;
-              background-repeat: no-repeat;
-              position: absolute;
-              right: 10px;
-            }
-
-            .sect-five-wm-collection {
-              position: absolute;
-              left: 24px;
-              bottom: 24px;
-
-              h3 {
-                font-weight: 600;
-                font-size: 24px;
-                font-family: $shoppy-CTA-family;
-              }
-
-              p {
-                font-family: $shoppy-body-family;
-                font-size: 14px;
-                width: 70%;
-              }
-
-              span {
-                font-weight: 500;
-                font-size: 16px;
-                font-family: $shoppy-body-family;
-                color: $shoppy-white;
-                &:hover {
-                  text-decoration: underline;
-                  cursor: pointer;
-                }
-              }
-            }
+            background-color: $shoppy-teal-blue;
           }
 
-          .sect-five-gal-two-dw {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+          .sect-five-head-sm-txt {
+            font-size: 1rem;
+            color: $shoppy-teal-blue;
+            font-weight: 600;
+            font-family: $shoppy-body-family;
+          }
+        }
 
-            .sect-five-gal-btm-one {
-              background: #1e1e1e;
+        .sect-five-head-lg {
+          color: #000;
+          font-weight: 600;
+          font-size: 36px;
+          font-family: $shoppy-CTA-family;
+          margin-top: 20px;
+          margin-bottom: 60px;
+        }
+
+        .sect-five-gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+          height: 600px;
+
+          .sect-five-gal-one {
+            @include k-bg-img2;
+            background: #000000;
+            border-radius: 4px;
+            padding: 70px 30px 0px 30px;
+
+            .sect-five-ps5 {
+              background-image: url(/assets/images/ps-5.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              height: 100%;
+              background-position: center;
+              color: $shoppy-hero-ft-txt;
               position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-radius: 4px;
 
-              .sect-five-speaker-txt {
+              div {
                 position: absolute;
-                color: $shoppy-hero-ft-txt;
-                bottom: 24px;
-                left: 24px;
+                bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
 
                 h3 {
                   font-weight: 600;
@@ -673,7 +592,7 @@ body {
                 p {
                   font-family: $shoppy-body-family;
                   font-size: 14px;
-                  width: 100%;
+                  width: 70%;
                 }
 
                 span {
@@ -687,31 +606,377 @@ body {
                   }
                 }
               }
+            }
+          }
 
-              .sect-five-speaker-png {
-                background-image: url(assets/images/speakers.png);
-                width: calc(100% - 80px);
-                height: calc(100% - 2rem);
+          .sect-five-gal-two {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+            .sect-five-gal-two-up {
+              background: #0d0d0d;
+              color: $shoppy-hero-ft-txt;
+              height: 100%;
+              position: relative;
+              border-radius: 4px;
+
+              .sect-five-lady-in-hat {
+                background-image: url(/assets/images/woman-wearing-hat.png);
+                width: 70%;
+                height: 100%;
                 background-size: contain;
-                background-position: center;
                 background-repeat: no-repeat;
+                position: absolute;
+                right: 10px;
+              }
+
+              .sect-five-wm-collection {
+                position: absolute;
+                left: 24px;
+                bottom: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h3 {
+                  font-weight: 600;
+                  font-size: 24px;
+                  font-family: $shoppy-CTA-family;
+                }
+
+                p {
+                  font-family: $shoppy-body-family;
+                  font-size: 14px;
+                  width: 70%;
+                }
+
+                span {
+                  font-weight: 500;
+                  font-size: 16px;
+                  font-family: $shoppy-body-family;
+                  color: $shoppy-white;
+                  &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                  }
+                }
               }
             }
 
-            .sect-five-gal-btm-two {
-              background: #1e1e1e;
-              padding: 35px;
+            .sect-five-gal-two-dw {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 30px;
 
-              .sect-five-perfume-png {
-                background-image: url(assets/images/perfume.png);
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
+              .sect-five-gal-btm-one {
+                background: #1e1e1e;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+
+                .sect-five-speaker-txt {
+                  position: absolute;
+                  color: $shoppy-hero-ft-txt;
+                  bottom: 24px;
+                  left: 24px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+
+                  h3 {
+                    font-weight: 600;
+                    font-size: 24px;
+                    font-family: $shoppy-CTA-family;
+                  }
+
+                  p {
+                    font-family: $shoppy-body-family;
+                    font-size: 14px;
+                    width: 100%;
+                  }
+
+                  span {
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: $shoppy-body-family;
+                    color: $shoppy-white;
+                    &:hover {
+                      text-decoration: underline;
+                      cursor: pointer;
+                    }
+                  }
+                }
+
+                .sect-five-speaker-png {
+                  background-image: url(assets/images/speakers.png);
+                  width: calc(100% - 80px);
+                  height: calc(100% - 2rem);
+                  background-size: contain;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+              }
+
+              .sect-five-gal-btm-two {
+                background: #1e1e1e;
+                padding: 35px;
+
+                .sect-five-perfume-png {
+                  background-image: url(assets/images/perfume.png);
+                  width: 100%;
+                  height: 100%;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                }
               }
             }
           }
+        }
+      }
+    }
+
+    .sect-six {
+      margin-top: 9rem;
+      margin-bottom: 9rem;
+      @include k-container;
+      .sect-six-container {
+        border: #dee2e7 1px solid;
+        border-radius: 6px;
+        background: $shoppy-white;
+        padding: 21px;
+        .sect-six-head {
+          font-family: $shoppy-CTA-family;
+          font-weight: 600;
+          font-size: 21.0169px;
+          margin-bottom: 1rem;
+        }
+
+        .sect-six-devices {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+
+          gap: 1rem;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            .ipad {
+              @include k-bg-img3;
+            }
+
+            div {
+              h3 {
+                font-weight: 600;
+                font-size: 18.9153px;
+                font-family: $shoppy-body-family;
+                color: #1c1c1c;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 16.8136px;
+                color: #606060;
+                font-family: $shoppy-body-family;
+                width: 70%;
+              }
+
+              button {
+                background: #ffffff;
+                border: 1px solid #dee2e7;
+                border-radius: 6px;
+                width: 164.7px;
+                height: 44.19px;
+                color: #2283dc;
+                transition: 0.3s;
+                font-weight: 500;
+                font-size: 16.8136px;
+                font-family: $shoppy-CTA-family;
+                @include jd-flex-norm;
+                gap: 0.9rem;
+
+                cursor: pointer;
+                &:hover {
+                  background: #eeeeee;
+                }
+
+                i {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+
+          div {
+            .iphone {
+              @include k-bg-img3;
+            }
+          }
+
+          div {
+            .iwatch {
+              @include k-bg-img3;
+            }
+          }
+
+          div {
+            .macbook {
+              @include k-bg-img3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $shoppy-hero-ft-bg;
+    color: $shoppy-hero-ft-txt;
+
+    .ft-container {
+      padding-top: 4rem;
+      padding-bottom: 2.5rem;
+      font-family: $shoppy-hero-ft-txt;
+
+      .ft-sect-one {
+        @include jd-flex-sb;
+        @include k-container;
+        border-bottom: 1px solid #ffffff66;
+        padding-bottom: 45px;
+
+        .ft-sect-one-pt1 {
+          @include jd-flex-sb;
+          gap: 24px;
+
+          .ft-sect-one-pt1-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            h3 {
+              font-family: "Nunito", sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 28px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .ft-sect-one-pt2 {
+          @include jd-flex-sb;
+          gap: 24px;
+
+          .ft-sect-one-pt2-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            h3 {
+              font-family: "Nunito", sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 28px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .ft-sect-two {
+        display: flex;
+        justify-content: space-between;
+        @include k-container;
+        border-bottom: 1px solid #ffffff66;
+        padding-bottom: 70px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 4rem;
+
+          li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .ft-sec-head {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 1rem;
+          }
+
+          .ft-social-links-icon {
+            font-size: 30px;
+            font-weight: 200;
+            display: flex;
+            gap: 2rem;
+          }
+
+          .ft-for-mobile {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 0.75rem;
+            }
+          }
+        }
+      }
+
+      .ft-sect-three {
+        margin-top: 30px;
+        @include jd-flex-sb;
+        @include k-container;
+
+        .ft-pay-opt {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          h4 {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #cfcfcf;
+          }
+
+          div {
+            display: flex;
+            gap: 20px;
+          }
+        }
+
+        .ft-copyright {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #cfcfcf;
         }
       }
     }
