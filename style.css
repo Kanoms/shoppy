@@ -680,6 +680,11 @@ body main .sect-one .sponsors-container .sponsors div {
 body main .sect-two {
   padding-top: 90px;
 }
+@media (max-width: 768px) {
+  body main .sect-two {
+    padding-bottom: 2rem;
+  }
+}
 body main .sect-two .explore {
   padding-top: 90px;
   margin-top: 90px;
@@ -687,6 +692,12 @@ body main .sect-two .explore {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore {
+    padding: 5px 1rem;
+    font-size: 20px;
+  }
 }
 body main .sect-two .explore .explore-head {
   display: flex;
@@ -700,11 +711,21 @@ body main .sect-two .explore .explore-head h2 {
   font-weight: 700;
   color: #1e1e1e;
 }
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-head h2 {
+    font-size: 28px;
+  }
+}
 body main .sect-two .explore .explore-head span {
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   font-weight: 500;
   color: #5ac0c0;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-head span {
+    font-size: 18px;
+  }
 }
 body main .sect-two .explore .explore-img-sect {
   display: flex;
@@ -714,12 +735,25 @@ body main .sect-two .explore .explore-img-sect {
   gap: 2rem;
   color: #ffffff;
 }
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect {
+    gap: 2rem;
+  }
+}
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up {
   width: 100%;
   display: grid;
   grid-template-columns: 34% 64%;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-up {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 1rem;
+    justify-content: center;
+  }
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion {
   background-image: url(/assets/images/short-trousers.png);
@@ -728,6 +762,16 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img
   height: 427px;
   border-radius: 5px;
   position: relative;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-fashion p {
   position: absolute;
@@ -742,6 +786,16 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img
   border-radius: 5px;
   position: relative;
 }
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+}
 body main .sect-two .explore .explore-img-sect .explore-img-sect-up .explore-img-sect-electronics p {
   position: absolute;
   left: 2rem;
@@ -755,6 +809,13 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-down {
   justify-content: space-between;
   height: 427px;
 }
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-down {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops {
   background-image: url(/assets/images/shops.png);
   background-repeat: no-repeat;
@@ -762,6 +823,16 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-i
   height: 427px;
   border-radius: 5px;
   position: relative;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-shops p {
   position: absolute;
@@ -775,6 +846,16 @@ body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-i
   height: 427px;
   border-radius: 5px;
   position: relative;
+}
+@media (max-width: 768px) {
+  body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 body main .sect-two .explore .explore-img-sect .explore-img-sect-down .explore-img-sect-furniture p {
   position: absolute;

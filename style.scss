@@ -346,6 +346,10 @@ body {
 
     .sect-two {
       padding-top: 90px;
+
+      @include respond(small) {
+        padding-bottom: 2rem;
+      }
       .explore {
         padding-top: 90px;
         margin-top: 90px;
@@ -353,6 +357,11 @@ body {
         font-family: $shoppy-body-family;
         font-weight: 500;
         font-size: 2rem;
+
+        @include respond(small) {
+          @include k-container-sm;
+          font-size: 20px;
+        }
 
         .explore-head {
           @include jd-flex-sb;
@@ -362,6 +371,10 @@ body {
             font-family: $shoppy-section-heading-family;
             font-weight: 700;
             color: $shoppy-dark-btn;
+
+            @include respond(small) {
+              font-size: 28px;
+            }
           }
 
           span {
@@ -369,6 +382,10 @@ body {
             font-size: 21px;
             font-weight: 500;
             color: #5ac0c0;
+
+            @include respond(small) {
+              font-size: 18px;
+            }
           }
         }
 
@@ -378,6 +395,10 @@ body {
           gap: 2rem;
           color: $shoppy-white;
 
+          @include respond(small) {
+            gap: 2rem;
+          }
+
           .explore-img-sect-up {
             width: 100%;
             display: grid;
@@ -385,9 +406,22 @@ body {
             align-items: center;
             justify-content: space-between;
 
+            @include respond(small) {
+              grid-template-columns: 100%;
+              grid-template-rows: 50% 50%;
+              gap: 1rem;
+              justify-content: center;
+            }
+
             .explore-img-sect-fashion {
               background-image: url(/assets/images/short-trousers.png);
               @include k-exp-container;
+
+              @include respond(small) {
+                @include k-exp-container-sm;
+                background-size: cover;
+                background-position: center;
+              }
 
               p {
                 position: absolute;
@@ -399,6 +433,12 @@ body {
             .explore-img-sect-electronics {
               background-image: url(/assets/images/table-gadgets.png);
               @include k-exp-container;
+
+              @include respond(small) {
+                @include k-exp-container-sm;
+                background-size: cover;
+                background-position: center;
+              }
 
               p {
                 position: absolute;
@@ -416,9 +456,21 @@ body {
             justify-content: space-between;
             height: 427px;
 
+            @include respond(small) {
+              grid-template-columns: repeat(1, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+              gap: 1rem;
+            }
+
             .explore-img-sect-shops {
               background-image: url(/assets/images/shops.png);
               @include k-exp-container;
+
+              @include respond(small) {
+                @include k-exp-container-sm;
+                background-size: cover;
+                background-position: center;
+              }
 
               p {
                 position: absolute;
@@ -430,6 +482,12 @@ body {
             .explore-img-sect-furniture {
               background-image: url(/assets/images/ante-room.png);
               @include k-exp-container;
+
+              @include respond(small) {
+                @include k-exp-container-sm;
+                background-size: cover;
+                background-position: center;
+              }
 
               p {
                 position: absolute;
