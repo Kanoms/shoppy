@@ -1,8 +1,8 @@
 // Variables for breakpoints
 $smart-phones: 768px;
 $tablets: 991px;
-$laptops: 1023px;
-$desktops: 1200px;
+$laptops: 1290px;
+$desktops: 1600px;
 
 @mixin respond($breakpoint) {
   @if ($breakpoint == small) {
