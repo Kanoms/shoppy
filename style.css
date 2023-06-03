@@ -560,8 +560,9 @@ body header .hero-sect .hero-sect-container .hero-sect-text {
 }
 @media (max-width: 768px) {
   body header .hero-sect .hero-sect-container .hero-sect-text {
-    margin-left: 4rem;
+    margin-left: 0rem;
     width: 100%;
+    align-items: center;
   }
 }
 body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-head2 {
@@ -587,6 +588,8 @@ body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-h1 h1 {
 @media (max-width: 768px) {
   body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-h1 h1 {
     font-size: 24px;
+    word-wrap: none;
+    width: auto;
   }
 }
 body header .hero-sect .hero-sect-container .hero-sect-text .hero-sect-para {
@@ -631,7 +634,7 @@ body main .sect-one {
 }
 @media (max-width: 768px) {
   body main .sect-one {
-    padding-top: 10rem;
+    padding-top: 1rem;
     padding-bottom: 7rem;
   }
 }
@@ -644,6 +647,7 @@ body main .sect-one .sponsors-container {
 @media (max-width: 768px) {
   body main .sect-one .sponsors-container {
     padding: 5px 1rem;
+    padding-top: 0px;
   }
 }
 body main .sect-one .sponsors-container .sponsors {
@@ -664,6 +668,9 @@ body main .sect-one .sponsors-container .sponsors {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
+    transform: none;
+    left: 0rem;
+    bottom: 0rem;
   }
 }
 body main .sect-one .sponsors-container .sponsors div {
@@ -872,10 +879,27 @@ body main .sect-three .sect-three-container {
   gap: 40px;
   font-family: "Poppins", sans-serif;
 }
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container {
+    flex-direction: column;
+    padding: 5px 1rem;
+    text-align: center;
+  }
+}
 body main .sect-three .sect-three-container .sect-three-head {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-head {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 body main .sect-three .sect-three-container .sect-three-head h3 {
   margin-top: 0px;
@@ -888,6 +912,11 @@ body main .sect-three .sect-three-container .sect-three-head p {
   font-size: 17.8128px;
   line-height: 27px;
   width: 50%;
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-head p {
+    width: 100%;
+  }
 }
 body main .sect-three .sect-three-container .sect-three-head button {
   width: 167.15px;
@@ -908,6 +937,23 @@ body main .sect-three .sect-three-container .sect-three-img {
   justify-content: space-between;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-img {
+    grid-template-columns: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 {
+    text-align: center;
+    margin-left: 1rem;
+    margin: auto;
+  }
+}
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 {
   background-image: url(/assets/images/male-trouser.png);
   background-repeat: no-repeat;
@@ -918,7 +964,7 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 
   border-radius: 12px;
   position: relative;
 }
-body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 button {
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 .side-btn {
   position: absolute;
   width: 48px;
   height: 41px;
@@ -929,6 +975,24 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 
   cursor: pointer;
   transition: 0.3s;
   left: -24px;
+}
+body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 .hidden-btn {
+  position: absolute;
+  width: 48px;
+  height: 41px;
+  top: 50%;
+  border: none;
+  border-radius: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+  right: -24px;
+  display: none;
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 .sect-three-img1 .hidden-btn {
+    display: block;
+  }
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 p {
   font-family: "Poppins";
@@ -958,6 +1022,11 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt1 
   font-weight: 500;
   font-size: 16.7324px;
   color: #388e3c;
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 {
+    display: none;
+  }
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 .sect-three-img2 {
   background-image: url(/assets/images/girl-yale.png);
@@ -997,6 +1066,11 @@ body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt2 
   font-weight: 500;
   font-size: 16.7324px;
   color: #388e3c;
+}
+@media (max-width: 768px) {
+  body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 {
+    display: none;
+  }
 }
 body main .sect-three .sect-three-container .sect-three-img .sect-three-img-pt3 .sect-three-img3 {
   background-image: url(/assets/images/girl-shorts.png);
