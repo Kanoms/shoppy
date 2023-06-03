@@ -12,19 +12,19 @@
   color: $shoppy-blue;
 }
 
-@mixin jd-flex-norm {
+@mixin ko-flex-norm {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@mixin jd-flex-sb {
+@mixin ko-flex-sb {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-@mixin jd-container {
+@mixin ko-container {
   padding: 5px 6rem;
 }
 
@@ -109,5 +109,5 @@
   background-repeat: no-repeat;
   height: 265px;
   width: 100%;
-  @include jd-flex-norm;
+  @include ko-flex-norm;
 }

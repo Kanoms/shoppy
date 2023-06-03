@@ -21,7 +21,7 @@ body {
       width: 100%;
 
       .top-nav {
-        @include jd-flex-norm;
+        @include ko-flex-norm;
         font-size: 14px;
         color: $shoppy-off-white;
         background-color: $shoppy-dark-btn;
@@ -43,8 +43,8 @@ body {
       }
 
       .mid-nav {
-        @include jd-flex-sb;
-        @include jd-container;
+        @include ko-flex-sb;
+        @include ko-container;
 
         @include respond(small) {
           @include k-container-sm;
@@ -52,7 +52,7 @@ body {
         height: 56px;
 
         .logo {
-          @include jd-flex-norm;
+          @include ko-flex-norm;
           gap: 5rem;
 
           @include respond(small) {
@@ -131,15 +131,15 @@ body {
       .main-nav {
         border-top: 1px solid #808080bd;
         border-bottom: 1px solid #808080bd;
-        @include jd-container;
-        @include jd-flex-sb;
+        @include ko-container;
+        @include ko-flex-sb;
 
         @include respond(small) {
           @include k-container-sm;
         }
 
         .left {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           gap: 5rem;
 
           span {
@@ -148,7 +148,7 @@ body {
           }
 
           ul {
-            @include jd-flex-norm;
+            @include ko-flex-norm;
             gap: 2rem;
 
             @include respond(small) {
@@ -167,7 +167,7 @@ body {
         }
 
         .nav-icons {
-          @include jd-flex-norm;
+          @include ko-flex-norm;
           gap: 2rem;
 
           span {
@@ -201,7 +201,7 @@ body {
       }
 
       .hero-sect-container {
-        @include jd-flex-sb;
+        @include ko-flex-sb;
         background-color: $shoppy-hero-ft-bg;
         border-radius: 4px;
         position: relative;
@@ -212,7 +212,7 @@ body {
         }
 
         .hero-sect-text {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           flex-direction: column;
           align-items: start;
           width: 55%;
@@ -225,7 +225,7 @@ body {
           }
 
           .hero-sect-head2 {
-            @include jd-flex-sb;
+            @include ko-flex-sb;
             gap: 2rem;
             font-family: $shoppy-item-ffamily;
             font-size: $shoppy-hero-sm;
@@ -254,7 +254,7 @@ body {
           .hero-sect-para {
             font-family: $shoppy-item-ffamily;
             font-size: $shoppy-hero-sm;
-            @include jd-flex-norm;
+            @include ko-flex-norm;
 
             .hero-sect-para-span {
               &:hover {
@@ -267,7 +267,7 @@ body {
 
         .hero-sect-toggle {
           position: absolute;
-          @include jd-flex-norm;
+          @include ko-flex-norm;
           bottom: 30px;
           left: 50%;
           gap: 1rem;
@@ -316,7 +316,7 @@ body {
         }
 
         .sponsors {
-          @include jd-flex-norm;
+          @include ko-flex-norm;
           gap: 5rem;
           position: absolute;
           bottom: -90px;
@@ -342,7 +342,7 @@ body {
             box-shadow: 0px 34.867px 46.4894px rgba(212, 217, 232, 0.2);
             border-radius: 18.5958px;
             position: relative;
-            @include jd-flex-norm;
+            @include ko-flex-norm;
 
             @include respond(small) {
             }
@@ -371,7 +371,7 @@ body {
         }
 
         .explore-head {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           margin-bottom: 3rem;
           h2 {
             font-size: $shoppy-section-heading;
@@ -397,7 +397,7 @@ body {
         }
 
         .explore-img-sect {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           flex-direction: column;
           gap: 2rem;
           color: $shoppy-white;
@@ -530,7 +530,7 @@ body {
           @include respond(small) {
             text-align: center;
             margin: auto;
-            @include jd-flex-norm;
+            @include ko-flex-norm;
             width: 100%;
           }
 
@@ -559,7 +559,7 @@ body {
             border-radius: 7.9168px;
             border: none;
             border-radius: 7px;
-            @include jd-flex-norm;
+            @include ko-flex-norm;
             gap: 0.8rem;
           }
         }
@@ -574,7 +574,7 @@ body {
           @include respond(small) {
             grid-template-columns: 100%;
             align-items: center;
-            @include jd-flex-norm;
+            @include ko-flex-norm;
             width: 100%;
           }
 
@@ -695,27 +695,45 @@ body {
       position: relative;
 
       @include k-container;
+
+      @include respond(small) {
+        padding: 0px;
+      }
       .sect-four-container {
         width: 100%;
         position: relative;
 
         .slanted-bg {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           width: 100%;
           height: 126px;
           background: linear-gradient(70deg, #c1dcdc 50%, #02a0a0 50%);
           background-size: 130% 100%;
           border-radius: 8.4px;
 
+          @include respond(small) {
+            position: relative;
+            background-size: 110% 100%;
+            border-radius: 0px;
+          }
+
           div {
             padding: 0px 2rem;
             padding-bottom: 0px;
+
+            @include respond(small) {
+              padding: 0.5rem;
+            }
 
             h3 {
               font-size: 25.2px;
               color: #212121;
               margin-bottom: 2.7px;
               font-family: $shoppy-CTA-family;
+
+              @include respond(small) {
+                font-size: 18px;
+              }
             }
 
             p {
@@ -723,6 +741,10 @@ body {
               color: #212121;
               opacity: 0.7;
               font-family: $shoppy-CTA-family;
+
+              @include respond(small) {
+                font-size: 12px;
+              }
             }
           }
 
@@ -1015,7 +1037,7 @@ body {
                 font-weight: 500;
                 font-size: 16.8136px;
                 font-family: $shoppy-CTA-family;
-                @include jd-flex-norm;
+                @include ko-flex-norm;
                 gap: 0.9rem;
 
                 cursor: pointer;
@@ -1062,13 +1084,13 @@ body {
       font-family: $shoppy-hero-ft-txt;
 
       .ft-sect-one {
-        @include jd-flex-sb;
+        @include ko-flex-sb;
         @include k-container;
         border-bottom: 1px solid #ffffff66;
         padding-bottom: 45px;
 
         .ft-sect-one-pt1 {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           gap: 24px;
 
           .ft-sect-one-pt1-txt {
@@ -1092,7 +1114,7 @@ body {
         }
 
         .ft-sect-one-pt2 {
-          @include jd-flex-sb;
+          @include ko-flex-sb;
           gap: 24px;
 
           .ft-sect-one-pt2-txt {
@@ -1165,7 +1187,7 @@ body {
 
       .ft-sect-three {
         margin-top: 30px;
-        @include jd-flex-sb;
+        @include ko-flex-sb;
         @include k-container;
 
         .ft-pay-opt {
