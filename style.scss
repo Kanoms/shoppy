@@ -13,6 +13,10 @@ body {
     width: 100%;
     margin-bottom: 90px;
 
+    @include respond(small) {
+      margin-bottom: 120px;
+    }
+
     nav {
       width: 100%;
 
@@ -191,11 +195,20 @@ body {
       margin-top: 60px;
       position: relative;
 
+      @include respond(small) {
+        @include k-container-sm;
+        padding-top: 50px;
+      }
+
       .hero-sect-container {
         @include jd-flex-sb;
         background-color: $shoppy-hero-ft-bg;
         border-radius: 4px;
         position: relative;
+
+        @include respond(small) {
+          flex-direction: column;
+        }
 
         .hero-sect-text {
           @include jd-flex-sb;
@@ -204,11 +217,20 @@ body {
           width: 55%;
           margin-left: 5rem;
 
+          @include respond(small) {
+            margin-left: 1rem;
+            width: 100%;
+          }
+
           .hero-sect-head2 {
             @include jd-flex-sb;
             gap: 2rem;
             font-family: $shoppy-item-ffamily;
             font-size: $shoppy-hero-sm;
+
+            @include respond(small) {
+              font-size: 20px;
+            }
           }
 
           .hero-sect-h1 {
@@ -218,6 +240,10 @@ body {
               font-weight: 600;
               word-wrap: break-word;
               width: 400px;
+
+              @include respond(small) {
+                font-size: 24px;
+              }
             }
           }
 
