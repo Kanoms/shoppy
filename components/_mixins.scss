@@ -32,6 +32,10 @@
   padding: 5px 5rem;
 }
 
+@mixin k-container-sm {
+  padding: 5px 1rem;
+}
+
 @mixin k-exp-container {
   background-repeat: no-repeat;
   background-size: cover;

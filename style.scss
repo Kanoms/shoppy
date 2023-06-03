@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: $shoppy-off-white;
+  background: #fcfcfc;
 
   header {
     font-size: $shoppy-body-text;
@@ -23,27 +23,68 @@ body {
         background-color: $shoppy-dark-btn;
         height: 48px;
 
+        @include respond(small) {
+          font-size: 11px;
+          text-align: center;
+          border-bottom: $shoppy-off-white 1px solid;
+        }
+
         span:last-child {
           margin-left: 10px;
+
+          @include respond(small) {
+            display: none;
+          }
         }
       }
 
       .mid-nav {
         @include jd-flex-sb;
         @include jd-container;
+
+        @include respond(small) {
+          @include k-container-sm;
+        }
         height: 56px;
 
         .logo {
           @include jd-flex-norm;
           gap: 5rem;
 
+          @include respond(small) {
+            position: relative;
+            gap: 1rem;
+          }
+
+          .menu {
+            display: none;
+
+            @include respond(small) {
+              display: block;
+              font-size: 24px;
+            }
+          }
+
           span {
             font-size: $shoppy-logo;
             font-family: $shoppy-logo-family;
+
+            @include respond(small) {
+              font-size: 24px;
+            }
           }
 
           label {
             position: relative;
+
+            @include respond(small) {
+              position: absolute;
+              top: 6rem;
+              left: -1rem;
+              padding-bottom: 1rem;
+              border-bottom: 1px solid #808080bd;
+              width: 100vw;
+            }
 
             input {
               height: 38px;
@@ -60,6 +101,10 @@ body {
 
               &::placeholder {
                 font-size: 12px;
+              }
+
+              @include respond(small) {
+                width: calc(100vw - 2rem);
               }
             }
 
@@ -85,6 +130,10 @@ body {
         @include jd-container;
         @include jd-flex-sb;
 
+        @include respond(small) {
+          @include k-container-sm;
+        }
+
         .left {
           @include jd-flex-sb;
           gap: 5rem;
@@ -97,6 +146,10 @@ body {
           ul {
             @include jd-flex-norm;
             gap: 2rem;
+
+            @include respond(small) {
+              display: none;
+            }
 
             li {
               transition: all 0.3s ease-in;
@@ -113,7 +166,16 @@ body {
           @include jd-flex-norm;
           gap: 2rem;
 
+          span {
+            @include respond(small) {
+              display: none;
+            }
+          }
+
           .icons {
+            @include respond(small) {
+              display: flex;
+            }
             i {
               font-size: 20px;
               margin-left: 15px;

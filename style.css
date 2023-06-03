@@ -333,7 +333,7 @@ li {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: #f5f5f5;
+  background: #fcfcfc;
 }
 body header {
   font-size: 14.78px;
@@ -352,8 +352,20 @@ body header nav .top-nav {
   background-color: #1e1e1e;
   height: 48px;
 }
+@media (max-width: 768px) {
+  body header nav .top-nav {
+    font-size: 11px;
+    text-align: center;
+    border-bottom: #f5f5f5 1px solid;
+  }
+}
 body header nav .top-nav span:last-child {
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  body header nav .top-nav span:last-child {
+    display: none;
+  }
 }
 body header nav .mid-nav {
   display: flex;
@@ -362,18 +374,53 @@ body header nav .mid-nav {
   padding: 5px 6rem;
   height: 56px;
 }
+@media (max-width: 768px) {
+  body header nav .mid-nav {
+    padding: 5px 1rem;
+  }
+}
 body header nav .mid-nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
+@media (max-width: 768px) {
+  body header nav .mid-nav .logo {
+    position: relative;
+    gap: 1rem;
+  }
+}
+body header nav .mid-nav .logo .menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  body header nav .mid-nav .logo .menu {
+    display: block;
+    font-size: 24px;
+  }
+}
 body header nav .mid-nav .logo span {
   font-size: 28px;
   font-family: "Quella", sans-serif;
 }
+@media (max-width: 768px) {
+  body header nav .mid-nav .logo span {
+    font-size: 24px;
+  }
+}
 body header nav .mid-nav .logo label {
   position: relative;
+}
+@media (max-width: 768px) {
+  body header nav .mid-nav .logo label {
+    position: absolute;
+    top: 6rem;
+    left: -1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7411764706);
+    width: 100vw;
+  }
 }
 body header nav .mid-nav .logo label input {
   height: 38px;
@@ -392,6 +439,11 @@ body header nav .mid-nav .logo label input::-moz-placeholder {
 }
 body header nav .mid-nav .logo label input::placeholder {
   font-size: 12px;
+}
+@media (max-width: 768px) {
+  body header nav .mid-nav .logo label input {
+    width: calc(100vw - 2rem);
+  }
 }
 body header nav .mid-nav .logo label i {
   position: absolute;
@@ -413,6 +465,11 @@ body header nav .main-nav {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  body header nav .main-nav {
+    padding: 5px 1rem;
+  }
+}
 body header nav .main-nav .left {
   display: flex;
   align-items: center;
@@ -429,6 +486,11 @@ body header nav .main-nav .left ul {
   justify-content: center;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  body header nav .main-nav .left ul {
+    display: none;
+  }
+}
 body header nav .main-nav .left ul li {
   transition: all 0.3s ease-in;
 }
@@ -441,6 +503,16 @@ body header nav .main-nav .nav-icons {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  body header nav .main-nav .nav-icons span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  body header nav .main-nav .nav-icons .icons {
+    display: flex;
+  }
 }
 body header nav .main-nav .nav-icons .icons i {
   font-size: 20px;
