@@ -546,6 +546,7 @@ body header .hero-sect .hero-sect-container {
 @media (max-width: 768px) {
   body header .hero-sect .hero-sect-container {
     flex-direction: column;
+    gap: 2rem;
   }
 }
 body header .hero-sect .hero-sect-container .hero-sect-text {
@@ -559,7 +560,7 @@ body header .hero-sect .hero-sect-container .hero-sect-text {
 }
 @media (max-width: 768px) {
   body header .hero-sect .hero-sect-container .hero-sect-text {
-    margin-left: 1rem;
+    margin-left: 4rem;
     width: 100%;
   }
 }
@@ -628,11 +629,22 @@ body main .sect-one {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  body main .sect-one {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+}
 body main .sect-one .sponsors-container {
   position: relative;
   width: 100%;
   padding-top: 90px;
   height: 100px;
+}
+@media (max-width: 768px) {
+  body main .sect-one .sponsors-container {
+    padding: 5px 1rem;
+  }
 }
 body main .sect-one .sponsors-container .sponsors {
   display: flex;
@@ -644,6 +656,15 @@ body main .sect-one .sponsors-container .sponsors {
   left: 50vw;
   transform: translate(-50%, -50%);
   width: auto;
+}
+@media (max-width: 768px) {
+  body main .sect-one .sponsors-container .sponsors {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 body main .sect-one .sponsors-container .sponsors div {
   width: 197.58px;

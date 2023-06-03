@@ -208,6 +208,7 @@ body {
 
         @include respond(small) {
           flex-direction: column;
+          gap: 2rem;
         }
 
         .hero-sect-text {
@@ -218,7 +219,7 @@ body {
           margin-left: 5rem;
 
           @include respond(small) {
-            margin-left: 1rem;
+            margin-left: 4rem;
             width: 100%;
           }
 
@@ -295,11 +296,20 @@ body {
       width: 100%;
       height: 100%;
 
+      @include respond(small) {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+      }
+
       .sponsors-container {
         position: relative;
         width: 100%;
         padding-top: 90px;
         height: 100px;
+
+        @include respond(small) {
+          @include k-container-sm;
+        }
 
         .sponsors {
           @include jd-flex-norm;
@@ -310,6 +320,14 @@ body {
           transform: translate(-50%, -50%);
           width: auto;
 
+          @include respond(small) {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1rem;
+          }
+
           div {
             width: 197.58px;
             height: 111.57px;
@@ -318,6 +336,9 @@ body {
             border-radius: 18.5958px;
             position: relative;
             @include jd-flex-norm;
+
+            @include respond(small) {
+            }
           }
         }
       }
