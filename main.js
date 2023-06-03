@@ -22,3 +22,13 @@ for (let i = 0; i < 5; i++) {
     circle.classList.add("toggled");
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButton = document.querySelector(".dropdown-button");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
+
+  dropdownButton.addEventListener("click", function () {
+    dropdownMenu.style.display =
+      dropdownMenu.style.display === "block" ? "none" : "block";
+  });
+});
