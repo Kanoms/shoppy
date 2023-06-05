@@ -13,11 +13,11 @@ body {
     width: 100%;
     margin-bottom: 90px;
 
-    @include respond(small) {
+    @include respond(medium) {
       margin-bottom: 120px;
     }
 
-    @include respond(medium) {
+    @include respond(small) {
       margin-bottom: 120px;
     }
 
@@ -50,30 +50,31 @@ body {
         @include ko-flex-sb;
         @include ko-container;
 
-        @include respond(small) {
-          @include k-container-sm;
+        @include respond(large) {
+          @include k-container-md;
         }
 
         @include respond(medium) {
           @include k-container-md;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
+          @include k-container-sm;
         }
+
         height: 56px;
 
         .logo {
           @include ko-flex-norm;
           gap: 5rem;
 
+          @include respond(medium) {
+            gap: 3rem;
+          }
+
           @include respond(small) {
             position: relative;
             gap: 1rem;
-          }
-
-          @include respond(medium) {
-            gap: 3rem;
           }
 
           .menu {
@@ -159,16 +160,16 @@ body {
         @include ko-container;
         @include ko-flex-sb;
 
-        @include respond(small) {
-          @include k-container-sm;
+        @include respond(large) {
+          @include k-container-md;
         }
 
         @include respond(medium) {
           @include k-container-md;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
+          @include k-container-sm;
         }
 
         .left {
@@ -184,11 +185,11 @@ body {
             @include ko-flex-norm;
             gap: 2rem;
 
-            @include respond(small) {
+            @include respond(medium) {
               display: none;
             }
 
-            @include respond(medium) {
+            @include respond(small) {
               display: none;
             }
 
@@ -208,11 +209,11 @@ body {
           gap: 2rem;
 
           span {
-            @include respond(small) {
+            @include respond(medium) {
               display: none;
             }
 
-            @include respond(medium) {
+            @include respond(small) {
               display: none;
             }
           }
@@ -236,17 +237,17 @@ body {
       margin-top: 60px;
       position: relative;
 
-      @include respond(small) {
-        @include k-container-sm;
-        padding-top: 50px;
+      @include respond(large) {
+        @include k-container-md;
       }
 
       @include respond(medium) {
         @include k-container-md;
       }
 
-      @include respond(large) {
-        @include k-container-md;
+      @include respond(small) {
+        @include k-container-sm;
+        padding-top: 50px;
       }
 
       .hero-sect-container {
@@ -279,11 +280,11 @@ body {
             font-family: $shoppy-item-ffamily;
             font-size: $shoppy-hero-sm;
 
-            @include respond(small) {
+            @include respond(medium) {
               font-size: 20px;
             }
 
-            @include respond(medium) {
+            @include respond(small) {
               font-size: 20px;
             }
           }
@@ -296,15 +297,15 @@ body {
               word-wrap: break-word;
               width: 400px;
 
+              @include respond(medium) {
+                font-size: 30px;
+                width: 80%;
+              }
+
               @include respond(small) {
                 font-size: 24px;
                 word-wrap: none;
                 width: auto;
-              }
-
-              @include respond(medium) {
-                font-size: 30px;
-                width: 80%;
               }
             }
           }
@@ -371,6 +372,8 @@ body {
         @include respond(small) {
           @include k-container-sm;
           padding-top: 0px;
+          width: 90%;
+          margin: auto;
         }
 
         .sponsors {
@@ -387,10 +390,14 @@ body {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            gap: 1rem;
+            row-gap: 1rem;
             transform: none;
             left: 0rem;
             bottom: 0rem;
+            padding-right: 0px;
+            justify-content: space-around;
+            width: 85%;
+            margin: auto;
           }
 
           div {
@@ -423,17 +430,17 @@ body {
         font-weight: 500;
         font-size: 2rem;
 
-        @include respond(small) {
-          @include k-container-sm;
-          font-size: 20px;
+        @include respond(large) {
+          @include k-container-md;
         }
 
         @include respond(medium) {
           @include k-container-md;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
+          @include k-container-sm;
+          font-size: 20px;
         }
 
         .explore-head {
@@ -468,12 +475,12 @@ body {
           gap: 2rem;
           color: $shoppy-white;
 
-          @include respond(small) {
-            gap: 2rem;
-          }
-
           @include respond(medium) {
             gap: 1rem;
+          }
+
+          @include respond(small) {
+            gap: 2rem;
           }
 
           .explore-img-sect-up {
@@ -483,16 +490,16 @@ body {
             align-items: center;
             justify-content: space-between;
 
+            @include respond(medium) {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+            }
+
             @include respond(small) {
               grid-template-columns: 100%;
               grid-template-rows: 50% 50%;
               gap: 1rem;
               justify-content: center;
-            }
-
-            @include respond(medium) {
-              grid-template-columns: repeat(2, 1fr);
-              gap: 1rem;
             }
 
             .explore-img-sect-fashion {
@@ -516,15 +523,15 @@ body {
               background-image: url(/assets/images/table-gadgets.png);
               @include k-exp-container;
 
+              @include respond(medium) {
+                background-size: cover;
+                background-position-x: -90px;
+              }
+
               @include respond(small) {
                 @include k-exp-container-sm;
                 background-size: cover;
                 background-position: center;
-              }
-
-              @include respond(medium) {
-                background-size: cover;
-                background-position-x: -90px;
               }
 
               p {
@@ -543,14 +550,14 @@ body {
             justify-content: space-between;
             height: 427px;
 
-            @include respond(small) {
-              grid-template-columns: repeat(1, 1fr);
-              grid-template-rows: repeat(2, 1fr);
+            @include respond(medium) {
+              grid-template-columns: repeat(2, 1fr);
               gap: 1rem;
             }
 
-            @include respond(medium) {
-              grid-template-columns: repeat(2, 1fr);
+            @include respond(small) {
+              grid-template-columns: repeat(1, 1fr);
+              grid-template-rows: repeat(2, 1fr);
               gap: 1rem;
             }
 
@@ -600,9 +607,9 @@ body {
         display: flex;
         gap: 40px;
 
-        @include respond(small) {
+        @include respond(large) {
+          @include k-container-md;
           flex-direction: column;
-          @include k-container-sm;
           text-align: center;
         }
 
@@ -612,9 +619,9 @@ body {
           text-align: center;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
           flex-direction: column;
+          @include k-container-sm;
           text-align: center;
         }
 
@@ -624,7 +631,7 @@ body {
           flex-direction: column;
           gap: 2rem;
 
-          @include respond(small) {
+          @include respond(large) {
             @include ko-flex-norm;
           }
 
@@ -632,7 +639,7 @@ body {
             @include ko-flex-norm;
           }
 
-          @include respond(large) {
+          @include respond(small) {
             @include ko-flex-norm;
           }
 
@@ -649,7 +656,7 @@ body {
             line-height: 27px;
             width: 50%;
 
-            @include respond(small) {
+            @include respond(larger) {
               width: 100%;
             }
 
@@ -657,7 +664,7 @@ body {
               width: 100%;
             }
 
-            @include respond(larger) {
+            @include respond(small) {
               width: 100%;
             }
           }
@@ -681,17 +688,17 @@ body {
           justify-content: space-between;
           gap: 2rem;
 
+          @include respond(medium) {
+            grid-template-columns: repeat(2, 278px);
+            gap: 1rem;
+            padding: 0px 4rem;
+          }
+
           @include respond(small) {
             grid-template-columns: 100%;
             align-items: center;
             @include ko-flex-norm;
             width: 100%;
-          }
-
-          @include respond(medium) {
-            grid-template-columns: repeat(2, 278px);
-            gap: 1rem;
-            padding: 0px 4rem;
           }
 
           .sect-three-img-pt1 {
@@ -741,13 +748,14 @@ body {
           }
 
           .sect-three-img-pt2 {
+            @include respond(medium) {
+              display: none;
+            }
+
             @include respond(small) {
               display: none;
             }
 
-            @include respond(medium) {
-              display: none;
-            }
             .sect-three-img2 {
               background-image: url(/assets/images/girl-yale.png);
               @include k-bg-img;
@@ -816,16 +824,16 @@ body {
 
       @include k-container;
 
-      @include respond(small) {
-        padding: 0px;
+      @include respond(large) {
+        @include k-container-md;
       }
 
       @include respond(medium) {
         @include k-container-md;
       }
 
-      @include respond(large) {
-        @include k-container-md;
+      @include respond(small) {
+        @include k-container-sm;
       }
 
       .sect-four-container {
@@ -842,8 +850,12 @@ body {
 
           @include respond(small) {
             position: relative;
-            background-size: 110% 100%;
-            border-radius: 0px;
+            background: linear-gradient(-185deg, #c1dcdc 50%, #02a0a0 50%);
+            background-size: 100% 120%;
+            flex-direction: column;
+            height: 200px;
+            @include ko-flex-norm;
+            gap: 2rem;
           }
 
           div {
@@ -852,6 +864,7 @@ body {
 
             @include respond(small) {
               padding: 0.5rem;
+              text-align: center;
             }
 
             h3 {
@@ -859,10 +872,6 @@ body {
               color: #212121;
               margin-bottom: 2.7px;
               font-family: $shoppy-CTA-family;
-
-              @include respond(small) {
-                font-size: 18px;
-              }
             }
 
             p {
@@ -870,10 +879,6 @@ body {
               color: #212121;
               opacity: 0.7;
               font-family: $shoppy-CTA-family;
-
-              @include respond(small) {
-                font-size: 12px;
-              }
             }
           }
 
@@ -899,17 +904,17 @@ body {
         @include k-container;
         padding: 0rem 7rem;
 
-        @include respond(small) {
-          @include k-container-sm;
-          padding-bottom: 16rem;
+        @include respond(large) {
+          @include k-container-md;
         }
 
         @include respond(medium) {
           @include k-container-md;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
+          @include k-container-sm;
+          padding-bottom: 16rem;
         }
 
         .sect-five-head-sm {
@@ -947,12 +952,9 @@ body {
           gap: 30px;
           height: 600px;
 
-          @include respond(small) {
-            grid-template-columns: 100%;
-            display: flex;
-            flex-direction: column;
-            height: 600px;
+          @include respond(large) {
             gap: 1rem;
+            height: 450px;
           }
 
           @include respond(medium) {
@@ -960,9 +962,12 @@ body {
             height: 400px;
           }
 
-          @include respond(large) {
+          @include respond(small) {
+            grid-template-columns: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
             gap: 1rem;
-            height: 450px;
           }
 
           .sect-five-gal-one {
@@ -1027,9 +1032,7 @@ body {
             grid-template-rows: repeat(2, 1fr);
             gap: 30px;
 
-            @include respond(small) {
-              display: flex;
-              flex-direction: column;
+            @include respond(large) {
               gap: 1rem;
             }
 
@@ -1037,9 +1040,12 @@ body {
               gap: 1rem;
             }
 
-            @include respond(large) {
+            @include respond(small) {
+              display: flex;
+              flex-direction: column;
               gap: 1rem;
             }
+
             .sect-five-gal-two-up {
               background: #0d0d0d;
               color: $shoppy-hero-ft-txt;
@@ -1061,13 +1067,13 @@ body {
                 position: absolute;
                 right: 10px;
 
-                @include respond(small) {
-                  height: 200px;
-                  background-position: right;
+                @include respond(medium) {
                   background-position-y: bottom;
                 }
 
-                @include respond(medium) {
+                @include respond(small) {
+                  height: 200px;
+                  background-position: right;
                   background-position-y: bottom;
                 }
               }
@@ -1115,9 +1121,7 @@ body {
               grid-template-columns: repeat(2, 1fr);
               gap: 30px;
 
-              @include respond(small) {
-                display: flex;
-                flex-direction: column;
+              @include respond(large) {
                 gap: 1rem;
               }
 
@@ -1125,7 +1129,9 @@ body {
                 gap: 1rem;
               }
 
-              @include respond(large) {
+              @include respond(small) {
+                display: flex;
+                flex-direction: column;
                 gap: 1rem;
               }
 
@@ -1218,16 +1224,16 @@ body {
       margin-bottom: 9rem;
       @include k-container;
 
-      @include respond(small) {
-        @include k-container-sm;
+      @include respond(large) {
+        @include k-container-md;
       }
 
       @include respond(medium) {
         @include k-container-md;
       }
 
-      @include respond(large) {
-        @include k-container-md;
+      @include respond(small) {
+        @include k-container-sm;
       }
 
       .sect-six-container {
@@ -1340,6 +1346,20 @@ body {
         border-bottom: 1px solid #ffffff66;
         padding-bottom: 45px;
 
+        @include respond(large) {
+          @include k-container-md;
+          padding-bottom: 45px;
+        }
+
+        @include respond(medium) {
+          @include k-container-md;
+          padding-bottom: 45px;
+          align-items: start;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2rem;
+        }
+
         @include respond(small) {
           align-items: start;
           @include k-container-sm;
@@ -1347,19 +1367,14 @@ body {
           justify-content: center;
         }
 
-        @include respond(medium) {
-          @include k-container-md;
-          padding-bottom: 45px;
-        }
-
-        @include respond(large) {
-          @include k-container-md;
-          padding-bottom: 45px;
-        }
-
         .ft-sect-one-pt1 {
           @include ko-flex-sb;
           gap: 24px;
+
+          @include respond(medium) {
+            @include ko-flex-norm;
+            gap: 1rem;
+          }
 
           @include respond(small) {
             @include ko-flex-norm;
@@ -1371,9 +1386,14 @@ body {
             flex-direction: column;
             gap: 0.5rem;
 
+            @include respond(medium) {
+              gap: 0px;
+            }
+
             @include respond(small) {
               gap: 0px;
             }
+
             h3 {
               font-family: "Nunito", sans-serif;
               font-style: normal;
@@ -1401,6 +1421,11 @@ body {
         .ft-sect-one-pt2 {
           @include ko-flex-sb;
           gap: 24px;
+
+          @include respond(medium) {
+            @include ko-flex-norm;
+            gap: 1rem;
+          }
 
           @include respond(small) {
             @include ko-flex-norm;
@@ -1447,6 +1472,19 @@ body {
         border-bottom: 1px solid #ffffff66;
         padding-bottom: 60px;
 
+        @include respond(large) {
+          @include k-container-md;
+          padding-bottom: 70px;
+          gap: 1rem;
+        }
+
+        @include respond(medium) {
+          @include k-container-md;
+          padding-bottom: 100px;
+          position: relative;
+          gap: 1rem;
+        }
+
         @include respond(small) {
           @include k-container-sm;
           display: grid;
@@ -1454,20 +1492,7 @@ body {
           justify-content: center;
           gap: 0px;
           position: relative;
-          padding-bottom: 200px;
-        }
-
-        @include respond(medium) {
-          @include k-container-md;
-          padding-bottom: 200px;
-          position: relative;
-          gap: 1rem;
-        }
-
-        @include respond(large) {
-          @include k-container-md;
-          padding-bottom: 70px;
-          gap: 1rem;
+          padding-bottom: 100px;
         }
 
         ul {
@@ -1509,11 +1534,11 @@ body {
             align-items: center;
             gap: 0.8rem;
 
-            @include respond(small) {
+            @include respond(medium) {
               display: none;
             }
 
-            @include respond(medium) {
+            @include respond(small) {
               display: none;
             }
 
@@ -1526,23 +1551,6 @@ body {
         }
 
         .ft-contact {
-          @include respond(small) {
-            position: absolute;
-            bottom: -60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100vw;
-            right: 0vw;
-            text-align: center;
-
-            .ft-sec-head {
-              @include respond(small) {
-                display: none;
-              }
-            }
-          }
-
           @include respond(medium) {
             @include k-container-md;
             position: absolute;
@@ -1559,6 +1567,21 @@ body {
             @include respond(medium) {
               display: none;
             }
+
+            @include respond(small) {
+              display: none;
+            }
+          }
+
+          @include respond(small) {
+            position: absolute;
+            bottom: -60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            right: 0vw;
+            text-align: center;
           }
         }
       }
@@ -1568,19 +1591,19 @@ body {
         @include ko-flex-sb;
         @include k-container;
 
-        @include respond(small) {
-          @include k-container-sm;
-          flex-direction: column;
-          justify-content: center;
-          gap: 1rem;
+        @include respond(large) {
+          @include k-container-md;
         }
 
         @include respond(medium) {
           @include k-container-md;
         }
 
-        @include respond(large) {
-          @include k-container-md;
+        @include respond(small) {
+          @include k-container-sm;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
         }
 
         .ft-pay-opt {
@@ -1639,21 +1662,24 @@ body {
   .dropdown-button {
     background-color: #f9f9f9;
     border: none;
-    color: #333;
+    color: #1e1e1e;
     padding: 2px;
   }
 
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #1e1e1e;
+
     list-style-type: none;
     padding: 0;
     z-index: 9999;
     border-radius: 4px;
+    width: calc(100vw - 2rem);
 
     li {
       padding: 10px;
+      color: #f9f9f9;
       transition: all 0.3s ease-in;
       font-size: 16px;
 
@@ -1663,7 +1689,7 @@ body {
       }
 
       a {
-        color: #333;
+        color: #f9f9f9;
         text-decoration: none;
       }
     }
