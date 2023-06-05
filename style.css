@@ -2058,6 +2058,16 @@ body footer .ft-container .ft-sect-three .ft-copyright {
   border-radius: 4px;
   width: calc(100vw - 2rem);
 }
+@media (max-width: 991px) {
+  .dropdown .dropdown-menu {
+    width: calc(100vw - 4rem);
+  }
+}
+@media (max-width: 768px) {
+  .dropdown .dropdown-menu {
+    width: calc(100vw - 2rem);
+  }
+}
 .dropdown .dropdown-menu li {
   padding: 10px;
   color: #f9f9f9;

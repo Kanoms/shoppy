@@ -1692,6 +1692,14 @@ body {
     border-radius: 4px;
     width: calc(100vw - 2rem);
 
+    @include respond(medium) {
+      width: calc(100vw - 4rem);
+    }
+
+    @include respond(small) {
+      width: calc(100vw - 2rem);
+    }
+
     li {
       padding: 10px;
       color: #f9f9f9;
