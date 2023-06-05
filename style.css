@@ -219,12 +219,12 @@ body header {
 }
 @media (max-width: 991px) {
   body header {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 768px) {
   body header {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
   }
 }
 body header nav {
@@ -642,8 +642,15 @@ body main .sect-one .sponsors-container .sponsors div {
 body main .sect-two {
   padding-top: 90px;
 }
+@media (max-width: 991px) {
+  body main .sect-two {
+    padding-top: 30px;
+  }
+}
 @media (max-width: 768px) {
   body main .sect-two {
+    padding-top: 90px;
+    margin-top: 3rem;
     padding-bottom: 2rem;
   }
 }
@@ -1589,6 +1596,12 @@ body main .sect-six .sect-six-container .sect-six-devices {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+@media (max-width: 991px) {
+  body main .sect-six .sect-six-container .sect-six-devices {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 @media (max-width: 768px) {
   body main .sect-six .sect-six-container .sect-six-devices {
     grid-template-columns: 100%;
@@ -1610,6 +1623,7 @@ body main .sect-six .sect-six-container .sect-six-devices div .ipad {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 body main .sect-six .sect-six-container .sect-six-devices div div h3 {
   font-weight: 600;
@@ -1656,6 +1670,7 @@ body main .sect-six .sect-six-container .sect-six-devices div .iphone {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 body main .sect-six .sect-six-container .sect-six-devices div .iwatch {
   background: #eeeeee;
@@ -1666,6 +1681,7 @@ body main .sect-six .sect-six-container .sect-six-devices div .iwatch {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 body main .sect-six .sect-six-container .sect-six-devices div .macbook {
   background: #eeeeee;
@@ -1676,6 +1692,7 @@ body main .sect-six .sect-six-container .sect-six-devices div .macbook {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 body footer {
   background: #000;

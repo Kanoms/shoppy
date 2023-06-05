@@ -14,11 +14,11 @@ body {
     margin-bottom: 90px;
 
     @include respond(medium) {
-      margin-bottom: 120px;
+      margin-bottom: 60px;
     }
 
     @include respond(small) {
-      margin-bottom: 120px;
+      margin-bottom: 60px;
     }
 
     nav {
@@ -419,7 +419,13 @@ body {
     .sect-two {
       padding-top: 90px;
 
+      @include respond(medium) {
+        padding-top: 30px;
+      }
+
       @include respond(small) {
+        padding-top: 90px;
+        margin-top: 3rem;
         padding-bottom: 2rem;
       }
       .explore {
@@ -1253,6 +1259,11 @@ body {
           grid-template-columns: repeat(4, 1fr);
           gap: 1rem;
 
+          @include respond(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+          }
+
           @include respond(small) {
             grid-template-columns: 100%;
             grid-template-rows: repeat(4, 1fr);
@@ -1265,6 +1276,7 @@ body {
             gap: 0.9rem;
             .ipad {
               @include k-bg-img3;
+              border-radius: 8px;
             }
 
             div {
@@ -1312,18 +1324,21 @@ body {
           div {
             .iphone {
               @include k-bg-img3;
+              border-radius: 8px;
             }
           }
 
           div {
             .iwatch {
               @include k-bg-img3;
+              border-radius: 8px;
             }
           }
 
           div {
             .macbook {
               @include k-bg-img3;
+              border-radius: 8px;
             }
           }
         }
